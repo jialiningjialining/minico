@@ -1,0 +1,67 @@
+//project.plugins.apply('maven-publish')
+//project.plugins.apply('signing')
+//
+//def localProps=new Properties()
+//localProps.load(project.file('local.properties').newDataInputStream())
+//Enumeration enumeration = localProps.keys();
+//while (enumeration.hasMoreElements()) {
+//      def key = enumeration.nextElement();
+//      def value = localProps.get(key);
+//      project.properties[key]=value
+//}
+//
+//afterEvaluate {
+//      publishing {
+//        publications {
+//            release(MavenPublication) {
+//                groupId = 'com.minico'
+//                artifactId = 'Minico'
+//                version = '1.0.0'
+//                from components.release
+//                // generate pom.xml
+//                pom {
+//                     name = 'Minico'
+//                     description = 'Simply minico webApp in Android'
+//                     url = 'https://gitlab.coolpi360.com/coolpi_ios/minico_and.git'
+//                    licenses {
+//                        license {
+//                            name = 'The Apache License, Version 2.0'
+//                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                        }
+//                    }
+//                    developers {
+//                        developer {
+//                            id = 'coolpi'
+//                            name = 'Dian'
+//                            email = 'lidian@coolpi360.com'
+//                        }
+//                    }
+//                    scm {
+//                        url = 'https://gitlab.coolpi360.com/coolpi_ios/minico_and.git' }
+//                    }
+//                }
+//             }
+//
+//         repositories {
+//             maven {
+//                 // change to point to your repo
+//                 def releaseRepo = 'http://192.168.99.1:8081/nexus/content/groups/public/'
+//                 def snapshotRepo = 'http://192.168.99.1:8081/nexus/content/groups/public/'
+//                 url = publishing.publications.release.version.endsWith('SNAPSHOT') ? snapshotRepo : releaseRepo
+//                 credentials {
+//                   username = project.properties['credencial.username']
+//                   password = project.properties['credencial.password']
+//                 }
+//             }
+//             maven {
+//                 name 'Build'
+//                   url = layout.buildDirectory.dir('repo')
+//             }
+//         }
+//      }
+//    if(project.properties['signing.keyId']&&project.properties['signing.password']&&project.properties['signing.secretKeyRingFile']){
+//       signing {
+//        sign publishing.publications.release
+//       }
+//    }
+//}

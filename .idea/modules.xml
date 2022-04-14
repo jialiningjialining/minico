@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpmnco.iml" filepath="$PROJECT_DIR$/.idea/modules/cpmnco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cpmnco.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cpmnco.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/capacitor/cpmnco.capacitor.iml" filepath="$PROJECT_DIR$/.idea/modules/capacitor/cpmnco.capacitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/capacitor-cordova-android-plugins/cpmnco.capacitor-cordova-android-plugins.iml" filepath="$PROJECT_DIR$/.idea/modules/capacitor-cordova-android-plugins/cpmnco.capacitor-cordova-android-plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/minico/cpmnco.minico.iml" filepath="$PROJECT_DIR$/.idea/modules/minico/cpmnco.minico.iml" />
+    </modules>
+  </component>
+</project>

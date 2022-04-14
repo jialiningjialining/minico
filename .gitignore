@@ -1,0 +1,6 @@
+# Project exclude paths
+/.gradle/
+/capacitor/build/
+/capacitor/build/intermediates/javac/debug/classes/
+/capacitor-cordova-android-plugins/build/
+/capacitor-cordova-android-plugins/build/intermediates/javac/debug/classes/

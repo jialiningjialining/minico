@@ -1,0 +1,6 @@
+{
+	"appId": "com.coolpi.cpweb",
+	"appName": "CPWebView",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
